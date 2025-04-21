@@ -25,7 +25,7 @@ Inmobiliaria Logo es una plataforma digital moderna y elegante diseñada para tr
 
 ## 🚀 Demo en Vivo
 
-Accede a la demo del proyecto: [Inmobiliaria Logo Demo](URL_PROYECTO_NETLIFY)
+Accede a la demo del proyecto: [Inmobiliaria Logo Demo](https://inmobiliaria-logo-tobias-moreno-techf.netlify.app/)
 
 ## 📱 Capturas de Pantalla
 
@@ -38,17 +38,20 @@ Accede a la demo del proyecto: [Inmobiliaria Logo Demo](URL_PROYECTO_NETLIFY)
 ## 💻 Instalación Local
 
 1. **Clonar el repositorio**
+
    ```bash
    git clone https://github.com/TobiasEmilianoMoreno/logo-frontend.git
    cd logo-frontend
    ```
 
 2. **Instalar dependencias**
+
    ```bash
    npm install
    ```
 
 3. **Iniciar el servidor de desarrollo**
+
    ```bash
    ng serve
    ```
@@ -80,8 +83,7 @@ src/
 │   └── shared/
 
 ```
+
 ---
 
 Desarrollado por Tobias Emiliano Moreno 2025.
-
-
