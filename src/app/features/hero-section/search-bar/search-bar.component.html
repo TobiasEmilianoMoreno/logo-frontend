@@ -1,0 +1,60 @@
+<div class="search">
+  <div class="search__tabs">
+    <button
+      class="search__tab"
+      [class.search__tab--active]="activeTab === 'buy'"
+      (click)="setActiveTab('buy')"
+    >
+      Comprar
+    </button>
+    <button
+      class="search__tab"
+      [class.search__tab--active]="activeTab === 'rent'"
+      (click)="setActiveTab('rent')"
+    >
+      Alquilar
+    </button>
+  </div>
+
+  <div class="search__bar">
+    <div class="search__filters">
+      <input
+        type="text"
+        placeholder="Buscar por ubicación o palabra clave..."
+        class="search__input"
+      />
+
+      <app-select
+        label="Departamento"
+        [options]="departamentos"
+        [selectedOption]="selectedDepartamento"
+        (selectionChange)="onDepartamentoChange($event)"
+      >
+      </app-select>
+
+      <app-select
+        label="Ambientes"
+        [options]="ambientes"
+        [selectedOption]="selectedAmbientes"
+        (selectionChange)="onAmbientesChange($event)"
+      >
+      </app-select>
+
+      <app-select
+        label="Precio"
+        [options]="precios"
+        [selectedOption]="selectedPrecio"
+        (selectionChange)="onPrecioChange($event)"
+      >
+      </app-select>
+
+      <button class="search__filter-btn search__filter-btn--icon">
+        <img src="assets/images/filters.svg" alt="filter" />
+      </button>
+
+      <button class="search__submit">
+        <i class="fas fa-search"></i>
+      </button>
+    </div>
+  </div>
+</div>
