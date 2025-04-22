@@ -1,0 +1,13 @@
+<div class="select-filter">
+  <select
+    class="select-filter__select"
+    [value]="selectedOption()"
+    (change)="selectOption($event)"
+  >
+    <option value="" disabled>{{ label() }}</option>
+    @for (option of options(); track option) {
+    <option [value]="option">{{ option }}</option>
+    }
+  </select>
+  <i class="fas fa-chevron-down"></i>
+</div>
