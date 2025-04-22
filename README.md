@@ -12,7 +12,6 @@ Inmobiliaria Logo es una plataforma digital moderna y elegante diseñada para tr
 
 - **Búsqueda Inteligente**: Filtros avanzados para encontrar propiedades por ubicación, tipo, precio y características
 - **Galería Visual**: Presentación elegante de propiedades con imágenes de alta calidad
-- **Sección de Inversiones**: Oportunidades exclusivas para inversores
 - **Experiencia de Usuario**: Interfaz intuitiva y responsive para todos los dispositivos
 - **Autenticación Segura**: Sistema de login integrado para usuarios registrados
 
