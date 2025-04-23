@@ -10,7 +10,10 @@
     </div>
 
     <div class="benefits-section__carousel">
-      <app-carousel [filterType]="'department'" [activeTab]="activeTab()"></app-carousel>
+      <app-carousel
+        [filterType]="'department'"
+        [activeTab]="activeTab()"
+      ></app-carousel>
     </div>
 
     <div class="benefits-section__content">
@@ -55,6 +58,11 @@
     <p class="benefits-section__description">
       Explora Nuestra Oferta de Complejos Inmobiliarios
     </p>
-    <app-carousel [filterType]="'building'" [activeTab]="activeTab()"></app-carousel>
+    <div class="benefits-section__carousel">
+      <app-carousel
+        [filterType]="'building'"
+        [activeTab]="activeTab()"
+      ></app-carousel>
+    </div>
   </div>
 </section>

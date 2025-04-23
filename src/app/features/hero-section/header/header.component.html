@@ -1,13 +1,28 @@
 <header class="header">
   <div class="header__container">
     <div class="header__logo">
+      <button class="header__menu-btn" (click)="toggleMenu($event)">
+        <i
+          class="fas fa-bars"
+        ></i>
+      </button>
       <h1 class="header__title">LOGO</h1>
     </div>
-    <nav class="header__nav">
-      <a href="#" class="header__nav-link">Inicio</a>
-      <a href="#" class="header__nav-link">Nosotros</a>
-      <a href="#" class="header__nav-link">Propiedades</a>
+
+    <nav
+      class="header__nav"
+      [class.header__nav--open]="isMenuOpen()"
+      (click)="$event.stopPropagation()"
+    >
+      <a href="#" class="header__nav-link" (click)="closeMenu()">Inicio</a>
+      <a href="#" class="header__nav-link" (click)="closeMenu()">Nosotros</a>
+      <a href="#" class="header__nav-link" (click)="closeMenu()">Propiedades</a>
     </nav>
+
     <button class="header__login-btn">Login</button>
   </div>
 </header>
+
+@if (isMenuOpen()) {
+<div class="overlay" (click)="closeMenu()"></div>
+}
