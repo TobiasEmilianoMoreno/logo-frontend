@@ -1,33 +1,33 @@
 <section>
   <div class="card">
     <div class="card__image">
-      <img [src]="building.image" [alt]="building.name" />
+      <img [src]="building().image" [alt]="building().name" />
     </div>
 
     <div class="card__content">
       <div class="card__header">
-        <h3 class="card__title">{{ building.type.name }}</h3>
+        <h3 class="card__title">{{ building().type.name }}</h3>
         <p class="card__price">
-          {{ building.price | currency : "USD" : "symbol" : "1.2-2" }}
+          {{ building().price | currency : "USD" : "symbol" : "1.2-2" }}
         </p>
       </div>
 
       <div class="card__details">
         <div class="card__detail">
           <img [src]="icons.bed" alt="Dormitorios" class="card__icon" />
-          <span>{{ building.beds }}</span>
+          <span>{{ building().beds }}</span>
         </div>
         <div class="card__detail">
           <img [src]="icons.bath" alt="Baños" class="card__icon" />
-          <span>{{ building.bathrooms }}</span>
+          <span>{{ building().bathrooms }}</span>
         </div>
         <div class="card__detail">
           <img [src]="icons.size" alt="Tamaño" class="card__icon" />
-          <span>{{ building.size }}m²</span>
+          <span>{{ building().size }}m²</span>
         </div>
       </div>
 
-      <p class="card__address">{{ building.direction }}</p>
+      <p class="card__address">{{ building().direction }}</p>
     </div>
   </div>
 </section>

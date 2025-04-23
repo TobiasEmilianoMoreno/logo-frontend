@@ -1,0 +1,16 @@
+<div class="carousel__container">
+    <div class="carousel__grid" #carouselRef>
+        @for (building of visibleBuildings; track building.id) {
+            <app-card [building]="building"></app-card>
+        }
+    </div>
+    <div class="carousel__pagination">
+        @for (dot of totalPages; track $index) {
+            <div
+                class="carousel__dot"
+                [class.carousel__dot--active]="currentPage === $index"
+                (click)="goToPage($index)"
+            ></div>
+        }
+    </div>
+</div>

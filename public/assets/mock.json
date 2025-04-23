@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "image": "assets/images/carrusel-dept.jpeg",
+    "name": "Departamento Moderno",
+    "type": { "id": 1, "name": "Departamento" },
+    "price": 800,
+    "beds": 2,
+    "bathrooms": 1,
+    "size": 60,
+    "direction": "Av. Los álamos 1440 Rosario"
+  },
+  {
+    "id": 2,
+    "image": "assets/images/carrusel-dept.jpeg",
+    "name": "Departamento Moderno",
+    "type": { "id": 1, "name": "Departamento" },
+    "price": 800,
+    "beds": 2,
+    "bathrooms": 1,
+    "size": 60,
+    "direction": "Av. Los áasdgasdfgasgasd Rosario"
+  },
+  {
+    "id": 3,
+    "image": "assets/images/carrusel-dept.jpeg",
+    "name": "Departamento Moderno",
+    "type": { "id": 1, "name": "Departamento" },
+    "price": 800,
+    "beds": 2,
+    "bathrooms": 1,
+    "size": 60,
+    "direction": "Av. Los álamos 1440 Rosario"
+  },
+  {
+    "id": 4,
+    "image": "assets/images/carrusel-dept.jpeg",
+    "name": "Departamento Moderno",
+    "type": { "id": 1, "name": "Departamento" },
+    "price": 800,
+    "beds": 2,
+    "bathrooms": 1,
+    "size": 60,
+    "direction": "Av. Los álamos 1440 Rosario"
+  },
+  {
+    "id": 5,
+    "image": "assets/images/carrusel-dept.jpeg",
+    "name": "Departamento Moderno",
+    "type": { "id": 1, "name": "Departamento" },
+    "price": 800,
+    "beds": 2,
+    "bathrooms": 1,
+    "size": 60,
+    "direction": "Av. Los álamos 1440 Rosario"
+  },
+  {
+    "id": 6,
+    "image": "assets/images/carrusel-dept.jpeg",
+    "name": "Departamento Moderno",
+    "type": { "id": 1, "name": "Departamento" },
+    "price": 800,
+    "beds": 2,
+    "bathrooms": 1,
+    "size": 60,
+    "direction": "Av. Los álamos 1440 Rosario"
+  },
+  {
+    "id": 7,
+    "image": "assets/images/carrusel-dept.jpeg",
+    "name": "Departamento Moderno",
+    "type": { "id": 1, "name": "Departamento" },
+    "price": 800,
+    "beds": 2,
+    "bathrooms": 1,
+    "size": 60,
+    "direction": "Av. Los álamos 1440 Rosario"
+  },
+  {
+    "id": 8,
+    "image": "assets/images/carrusel-dept.jpeg",
+    "name": "Departamento Moderno",
+    "type": { "id": 1, "name": "Departamento" },
+    "price": 800,
+    "beds": 2,
+    "bathrooms": 1,
+    "size": 60,
+    "direction": "Av. Los álamos 1440 Rosario"
+  },
+  {
+    "id": 9,
+    "image": "assets/images/carrusel-dept.jpeg",
+    "name": "Departamento Moderno",
+    "type": { "id": 1, "name": "Departamento" },
+    "price": 800,
+    "beds": 2,
+    "bathrooms": 1,
+    "size": 60,
+    "direction": "Av. Los álamos 1440 Rosario"
+  }
+]
