@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, output } from '@angular/core';
 import { SelectComponent } from '../../../shared/components/select/select.component';
 
 @Component({
@@ -8,6 +8,8 @@ import { SelectComponent } from '../../../shared/components/select/select.compon
   styleUrls: ['./search-bar.component.scss'],
 })
 export class SearchBarComponent {
+  tabChange = output<'rent' | 'buy'>();
+
   activeTab: 'rent' | 'buy' = 'rent';
 
   departamentos = ['Casa', 'Apartamento', 'Oficina', 'Local', 'Terreno'];
@@ -16,7 +18,7 @@ export class SearchBarComponent {
     '$0 - $50,000',
     '$50,000 - $100,000',
     '$100,000 - $200,000',
-    '$200,000+'
+    '$200,000+',
   ];
 
   selectedDepartamento = '';
@@ -40,6 +42,7 @@ export class SearchBarComponent {
 
   setActiveTab(tab: 'rent' | 'buy') {
     this.activeTab = tab;
+    this.tabChange.emit(tab);
   }
 
   onSearch() {

@@ -1,0 +1,60 @@
+<section class="benefits-section">
+  <div class="benefits-section__container">
+    <div class="benefits-section__header">
+      <h2 class="benefits-section__title">
+        Explora nuestras propiedades exclusivas
+      </h2>
+      <p class="benefits-section__description">
+        Las propiedades que buscás, en un solo lugar
+      </p>
+    </div>
+
+    <div class="benefits-section__carousel">
+      <app-carousel [filterType]="'department'" [activeTab]="activeTab()"></app-carousel>
+    </div>
+
+    <div class="benefits-section__content">
+      <div class="benefits-section__left">
+        <h3 class="benefits-section__subtitle">
+          Tu propiedad soñada, a solo un click!
+        </h3>
+        <img
+          src="assets/images/body-dept.jpeg"
+          alt="Edificio moderno"
+          class="benefits-section__image"
+        />
+      </div>
+
+      <div class="benefits-section__right">
+        <div class="circle-decoration"></div>
+        <div class="circle-decoration"></div>
+        <div class="circle-decoration"></div>
+        <div class="circle-decoration"></div>
+        <div class="benefits-section__features">
+          @for (feature of features; track feature.icon) {
+          <div class="feature">
+            <div class="feature__icon">
+              <img
+                [src]="'assets/images/' + feature.icon"
+                [alt]="feature.title"
+              />
+            </div>
+            <div class="feature__text">
+              <h4>{{ feature.title }}</h4>
+              <p>{{ feature.description }}</p>
+            </div>
+          </div>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="benefits-section__investment">
+    <h3 class="benefits-section__subtitle">Oportunidades de inversión</h3>
+    <p class="benefits-section__description">
+      Explora Nuestra Oferta de Complejos Inmobiliarios
+    </p>
+    <app-carousel [filterType]="'building'" [activeTab]="activeTab()"></app-carousel>
+  </div>
+</section>

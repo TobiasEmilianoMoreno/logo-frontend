@@ -14,12 +14,21 @@
 
       <div class="card__details">
         <div class="card__detail">
+          @if (building().beds) {
           <img [src]="icons.bed" alt="Dormitorios" class="card__icon" />
           <span>{{ building().beds }}</span>
+          } @else {
+          <img [src]="icons.floor" alt="Pisos" class="card__icon" />
+          <span>{{ building().floors }}</span>
+          }
         </div>
         <div class="card__detail">
+          @if (building().bathrooms) {
           <img [src]="icons.bath" alt="Baños" class="card__icon" />
           <span>{{ building().bathrooms }}</span>
+          } @else {
+          <span>{{ building().status }}</span>
+          }
         </div>
         <div class="card__detail">
           <img [src]="icons.size" alt="Tamaño" class="card__icon" />
