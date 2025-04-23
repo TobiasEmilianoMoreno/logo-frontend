@@ -6,6 +6,7 @@
         Tu Hogar Ideal: Encuentra la Propiedad de tus Sueños con Nosotros
       </h2>
     </div>
-    <app-search-bar></app-search-bar>
+    <app-search-bar (tabChange)="setActiveTab($event)"></app-search-bar>
   </div>
 </section>
+<app-benefits-section [activeTab]="activeTab"></app-benefits-section>

@@ -10,10 +10,11 @@ import { CurrencyPipe } from '@angular/common';
 })
 export class CardComponent {
   building = input.required<Building>();
-  
+
   icons = {
     bed: 'assets/images/bed.svg',
     bath: 'assets/images/bathroom.svg',
-    size: 'assets/images/building-size.svg'
+    size: 'assets/images/building-size.svg',
+    floor: 'assets/images/floor.svg',
   };
 }
