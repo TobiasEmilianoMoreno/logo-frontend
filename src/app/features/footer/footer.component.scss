@@ -1,0 +1,126 @@
+.footer {
+  position: relative;
+  padding-top: 73px;
+  height: 400px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/assets/images/footer-house.jpeg");
+    background-size: cover;
+    background-position: top 35% center;
+    z-index: -2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #36519680;
+  }
+
+  &__container {
+    position: relative;
+    max-width: 1700px;
+    margin: 0 auto;
+    z-index: 1;
+    width: 100%;
+    padding: 0 32px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    margin-bottom: 64px;
+  }
+
+  &__section {
+    h3 {
+      color: var(--color-white);
+      font-size: 20px;
+      margin-bottom: 16px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        margin-bottom: 12px;
+
+        a {
+          color: var(--color-white);
+          text-decoration: none;
+          font-size: 14px;
+          transition: color 0.3s ease;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+
+  &__logo {
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--color-white);
+  }
+
+  &__social {
+    display: grid;
+    gap: 12px;
+
+    a {
+      color: var(--color-white);
+      font-size: 20px;
+      transition: color 0.3s ease;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__copyright {
+    text-align: center;
+    padding-top: 16px;
+    border-top: 1px solid #fcfcfc;
+
+    p {
+      margin: 0;
+      font-size: 12px;
+      color: var(--color-white);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 24px 0 16px;
+
+    &__content {
+      gap: 16px;
+    }
+
+    &__section {
+      text-align: center;
+
+      h3 {
+        font-size: 15px;
+      }
+    }
+
+    &__social {
+      justify-content: center;
+    }
+  }
+}
