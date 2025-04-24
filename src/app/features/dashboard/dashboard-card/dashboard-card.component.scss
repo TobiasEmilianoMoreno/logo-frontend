@@ -1,0 +1,42 @@
+.info-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+
+  &__text {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  &__title {
+    font-size: 14px;
+    color: #7c8088;
+    margin: 0 0 4px;
+  }
+
+  &__value {
+    font-size: 24px;
+    color: #111827;
+    font-weight: 450;
+  }
+
+  &__action {
+    background-color: oklch(0.984 0.003 247.858);
+    border-radius: 6px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__action-icon {
+    width: 28px;
+    height: 24px;
+    filter: brightness(0) saturate(100%) invert(47%) sepia(70%) saturate(300%)
+      hue-rotate(85deg) brightness(95%);
+  }
+}

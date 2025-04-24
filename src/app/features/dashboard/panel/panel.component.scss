@@ -1,0 +1,14 @@
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+  padding-left: 10px;
+}
+
+h5 {
+  margin: 0;
+}
+
+h6 {
+  color: var(--color-text-secondary);
+}
