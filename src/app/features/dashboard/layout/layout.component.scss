@@ -1,0 +1,12 @@
+* {
+  background-color: #e0e0e01f;
+  padding: 10px;
+}
+.layout__content {
+  transition: margin-left 0.3s ease;
+  margin-left: 0;
+
+  &--shifted {
+    margin-left: 300px;
+  }
+}
