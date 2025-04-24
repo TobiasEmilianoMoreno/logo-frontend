@@ -6,7 +6,7 @@
   z-index: 100;
   height: calc(100vh - 48px);
   padding: 18px 0;
-  background-color: var(--color-background);
+  background-color: oklch(0.208 0.042 265.755);
   overflow-y: auto;
   transition: transform 0.3s ease;
 
@@ -15,8 +15,12 @@
   }
 
   &__img {
-    width: 26px;
+    width: 32px;
+    padding: 4px;
+    background-color: var(--color-gray);
+    border-radius: 8px;
   }
+
 
   &__link {
     display: flex;
@@ -26,10 +30,10 @@
     text-decoration: none;
     margin: 0 8px;
     border-radius: 8px;
-    color: var(--color-text-primary);
+    color: var(--color-gray);
 
     &:hover {
-      background-color: var(--color-gray);
+      color: var(--color-white);
     }
   }
 
