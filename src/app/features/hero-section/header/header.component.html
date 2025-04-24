@@ -1,0 +1,40 @@
+<header class="header" id="home">
+  <div class="header__container">
+    <div class="header__logo">
+      <button class="header__menu-btn" (click)="toggleMenu($event)">
+        <i class="fas fa-bars"></i>
+      </button>
+      <h1 class="header__title">LOGO</h1>
+    </div>
+
+    <nav
+      class="header__nav"
+      [class.header__nav--open]="isMenuOpen()"
+      (click)="$event.stopPropagation()"
+    >
+      <a class="header__nav-link" (click)="navigateTo('home', $event)"
+        >Inicio</a
+      >
+      <a class="header__nav-link" (click)="navigateTo('about', $event)"
+        >Nosotros</a
+      >
+      <a class="header__nav-link" (click)="navigateTo('properties', $event)"
+        >Propiedades</a
+      >
+    </nav>
+
+    @if (isLogedIn()) {
+    <button class="header__login-btn" (click)="logout()">Salir</button>
+    } @else {
+    <button class="header__login-btn" (click)="openLoginModal()">Login</button>
+    }
+  </div>
+</header>
+
+@if (isMenuOpen()) {
+<div class="overlay" (click)="closeMenu()"></div>
+} @if (isLoginModalOpen()) {
+<div class="modal-overlay" (click)="closeLoginModal()">
+  <app-auth-mock (closeModal)="closeLoginModal()"></app-auth-mock>
+</div>
+}

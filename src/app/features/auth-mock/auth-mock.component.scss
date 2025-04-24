@@ -1,0 +1,274 @@
+.auth {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-black);
+  }
+
+  &__box {
+    background: var(--color-white);
+    border-radius: 8px;
+    padding: 24px;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    & i {
+      color: #365196;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    color: #365196;
+    margin-bottom: 24px;
+    font-size: 35px;
+  }
+
+  &__subtitle {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 18px;
+    color: #365196;
+
+    &--small {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+  }
+
+  &__social-input {
+    margin-bottom: 16px;
+  }
+
+  &__social-btn {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    background: var(--color-white);
+    transition: background-color 0.3s;
+    color: #545f71;
+    position: relative;
+
+    img {
+      position: absolute;
+      left: 12px;
+      width: 24px;
+      height: 24px;
+    }
+
+    &:hover {
+      background-color: #f0f2f5;
+    }
+  }
+
+  &__social {
+    justify-content: center;
+    padding-left: 48px; // Espacio para el logo
+  }
+
+  &__account-list {
+    margin-top: 24px;
+  }
+
+  &__account-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #f8f9fa;
+    }
+  }
+
+  &__account-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    font-size: 18px;
+
+    &--add-account {
+      background-color: var(--color-white);
+
+      img {
+        background-color: transparent;
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  &__account-info {
+    flex: 1;
+  }
+
+  &__account-name {
+    font-weight: 500;
+  }
+
+  &__account-email {
+    color: #666;
+    font-size: 14px;
+  }
+
+  &__form {
+    margin-top: 24px;
+  }
+
+  &__form-group {
+    margin-bottom: 24px;
+    position: relative;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+
+    &:focus {
+      outline: none;
+      border-color: var(--color-primary);
+    }
+
+    &--error {
+      border-color: var(--color-error, #dc3545);
+      background-color: var(--color-error-bg, #fff8f8);
+    }
+  }
+
+  &__error-message {
+    color: var(--color-error, #dc3545);
+    font-size: 12px;
+    margin-top: 4px;
+  }
+
+  &__alert {
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 14px;
+
+    &--error {
+      background-color: var(--color-error-bg, #fff8f8);
+      color: var(--color-error, #dc3545);
+      border: 1px solid var(--color-error, #dc3545);
+    }
+
+    &--success {
+      background-color: var(--color-success-bg, #f0fff4);
+      color: var(--color-success, #28a745);
+      border: 1px solid var(--color-success, #28a745);
+    }
+  }
+
+  &__link {
+    color: var(--color-primary);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__info-text {
+    font-size: 14px;
+    color: #666;
+    margin: 16px 0;
+    text-align: center;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+
+  &__button {
+    padding: 10px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+
+    &--secondary {
+      background: none;
+      border: none;
+      color: var(--color-primary);
+
+      &:hover {
+        background-color: #f8f9fa;
+      }
+    }
+
+    &--primary {
+      background-color: var(--color-primary);
+      color: var(--color-white);
+      border: none;
+
+      &:hover {
+        background-color: var(--color-primary-dark);
+      }
+
+      .fa-spin {
+        color: #cccccc;
+      }
+
+      &:disabled {
+        opacity: 0.7;
+        cursor: not-allowed;
+      }
+    }
+  }
+  &__provider-header {
+    display: flex;
+    align-items: start;
+    padding-left: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #666;
+    color: #666;
+
+    img {
+      width: 24px;
+      margin-right: 12px;
+    }
+  }
+
+  &__provider-header--form {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+  }
+}
