@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
+import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -9,4 +10,10 @@ import { RouterLink } from '@angular/router';
 })
 export class FooterComponent {
   currentYear = new Date().getFullYear();
+  private viewportScroller = inject(ViewportScroller);
+
+  scrollToAnchor(anchor: string, event: Event) {
+    event.preventDefault();
+    this.viewportScroller.scrollToAnchor(anchor);
+  }
 }

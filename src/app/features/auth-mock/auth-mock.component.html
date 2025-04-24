@@ -1,0 +1,211 @@
+<!-- Initial Login Screen -->
+@if (currentStep === 'initial') {
+<div class="auth__container" (click)="onContainerClick($event)">
+  <div class="auth__box">
+    <h1 class="auth__title">LOGO</h1>
+    <button class="auth__close-btn" (click)="close()">×</button>
+
+    <h2 class="auth__subtitle">Elige como quieres ingresar</h2>
+
+    <div class="auth__social-input">
+      <button
+        class="auth__social-btn auth__social"
+        (click)="continueWithFacebook()"
+      >
+        <img
+          src="assets/images/facebook-logo.svg"
+          alt="Facebook"
+          class="facebook-logo"
+        />
+        Continuar con Facebook
+      </button>
+    </div>
+
+    <div class="auth__social-input">
+      <button
+        class="auth__social-btn auth__social"
+        (click)="continueWithGoogle()"
+      >
+        <img
+          src="assets/images/google-logo.svg"
+          alt="Google"
+          class="google-logo"
+        />
+        Continuar con Google
+      </button>
+    </div>
+
+    <div class="auth__social-input">
+      <button class="auth__social-btn auth__social">
+        Otro método
+      </button>
+    </div>
+
+    <div class="auth__info-text">
+      Al iniciar sesión, aceptas los Términos y Condiciones, Declaraciones,
+      Política de Protección de Datos y Política de Privacidad.
+    </div>
+  </div>
+</div>
+}
+
+<!-- Account Selection Screen -->
+@if (currentStep === 'google-accounts' || currentStep === 'facebook-accounts') {
+<div class="auth__container" (click)="onContainerClick($event)">
+  <div class="auth__box">
+    <button class="auth__close-btn" (click)="close()">×</button>
+    @if (selectedProvider === 'google') {
+    <div class="auth__provider-header">
+      <img
+        src="assets/images/google-logo.svg"
+        alt="Google"
+        class="google-logo"
+      />
+      <h6>Acceder con Google</h6>
+    </div>
+    } @else {
+    <div class="auth__provider-header">
+      <img src="assets/images/facebook-logo.svg" alt="Facebook" />
+      <h6>Acceder con Facebook</h6>
+    </div>
+    }
+
+    <h3 class="auth__subtitle">Elige una cuenta</h3>
+    <p class="auth__subtitle auth__subtitle--small">Para continuar a LOGO</p>
+
+    <div class="auth__account-list">
+      @for (account of selectedProvider === 'google' ? mockGoogleAccounts :
+      mockFacebookAccounts; track account.email) {
+      <div class="auth__account-item" (click)="selectAccount(account.email)">
+        <div
+          class="auth__account-avatar"
+          [class.auth__account-avatar--facebook]="
+            selectedProvider === 'facebook'
+          "
+        >
+          {{ account.name.charAt(0) }}
+        </div>
+        <div class="auth__account-info">
+          <div class="auth__account-name">{{ account.name }}</div>
+          <div class="auth__account-email">{{ account.email }}</div>
+        </div>
+      </div>
+      }
+
+      <div class="auth__account-item" (click)="useAnotherAccount()">
+        <div
+          class="auth__account-avatar auth__account-avatar--add-account"
+          [class.auth__account-avatar--facebook]="
+            selectedProvider === 'facebook'
+          "
+        >
+          <img src="assets/images/add-user-login.svg" alt="add-account" />
+        </div>
+        <div class="auth__account-info">
+          <div class="auth__account-name">Usar otra cuenta</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+}
+
+<!-- Login Screen -->
+@if (currentStep === 'login') {
+<div class="auth__container" (click)="onContainerClick($event)">
+  <div class="auth__box">
+    <button class="auth__close-btn" (click)="close()">×</button>
+    @if (selectedProvider === 'google') {
+    <div class="auth__provider-header--form">
+      <img
+        src="assets/images/google-logo.svg"
+        alt="Google"
+        class="google-logo"
+      />
+      <h6>Inicia sesión</h6>
+      <p>Utiliza tu cuenta de Google</p>
+    </div>
+    } @else {
+    <div class="auth__provider-header--form">
+      <img src="assets/images/facebook-logo.svg" alt="Facebook" />
+      <h6>Inicia sesión</h6>
+      <p>Utiliza tu cuenta de Facebook</p>
+    </div>
+    }
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="auth__form">
+      <div class="auth__form-group">
+        <input
+          class="auth__input"
+          [class.auth__input--error]="
+            loginForm.get('email')?.touched && loginForm.get('email')?.invalid
+          "
+          type="email"
+          formControlName="email"
+          placeholder="Correo electrónico o teléfono"
+        />
+        @if (loginForm.get('email')?.touched && loginForm.get('email')?.invalid)
+        {
+        <div class="auth__error-message">{{ getErrorMessage("email") }}</div>
+        }
+      </div>
+
+      <div class="auth__form-group">
+        <input
+          class="auth__input"
+          [class.auth__input--error]="
+            loginForm.get('password')?.touched &&
+            loginForm.get('password')?.invalid
+          "
+          type="password"
+          formControlName="password"
+          placeholder="Contraseña"
+        />
+        @if (loginForm.get('password')?.touched &&
+        loginForm.get('password')?.invalid) {
+        <div class="auth__error-message">{{ getErrorMessage("password") }}</div>
+        }
+      </div>
+
+      @if (loginError) {
+      <div class="auth__alert auth__alert--error">
+        {{ loginError }}
+      </div>
+      } @if (loginSuccess) {
+      <div class="auth__alert auth__alert--success">
+        ¡Inicio de sesión exitoso! Redirigiendo...
+      </div>
+      }
+
+      <div class="auth__info-text">
+        <a href="#" class="auth__link">¿Has olvidado tu contraseña?</a>
+      </div>
+
+      <div class="auth__info-text">
+        ¿No es tu ordenador? Usa el modo invitado para iniciar sesión de forma
+        privada.
+        <a href="#" class="auth__link">Más información</a>
+      </div>
+
+      <div class="auth__actions">
+        <button
+          type="button"
+          class="auth__button auth__button--secondary"
+          (click)="goBack()"
+        >
+          Atrás
+        </button>
+        <button
+          type="submit"
+          class="auth__button auth__button--primary"
+          [disabled]="loginForm.invalid || isLoading"
+        >
+          @if (isLoading) {
+          <i class="fas fa-spinner fa-spin"></i>
+          } @else { Siguiente }
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+}
