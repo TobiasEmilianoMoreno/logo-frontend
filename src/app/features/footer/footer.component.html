@@ -1,14 +1,14 @@
-<footer class="footer">
+<footer class="footer" >
   <div class="footer__container">
     <div class="footer__content">
       <div class="footer__section">
-        <h2 class="footer__logo">LOGO</h2>
+        <h2 class="footer__logo" id="about">LOGO</h2>
       </div>
 
       <div class="footer__section">
         <h3>Inicio</h3>
         <ul>
-          <li><a routerLink="/">Inicio</a></li>
+          <li><a (click)="scrollToAnchor('home', $event)">Inicio</a></li>
           <li><a routerLink="/servicios">Servicios</a></li>
           <li><a routerLink="/registrarse">Registrarse</a></li>
           <li><a routerLink="/nosotros">Nosotros</a></li>
