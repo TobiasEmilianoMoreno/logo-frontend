@@ -25,7 +25,9 @@
   }
 
   &__carousel {
-    margin-bottom: 64px;
+    max-width: 1800px;
+    margin: 0 auto 64px;
+    padding: 0 16px;
   }
 
   &__content {
@@ -114,7 +116,6 @@
         height: 120px;
         bottom: -5%;
         right: 50%;
-        transform: translateX(50%);
       }
     }
   }
@@ -163,7 +164,7 @@
   }
 
   &__investment {
-    max-width: 1450px;
+    max-width: 1800px;
     margin: 0 auto;
     padding: 64px 16px 0;
     text-align: center;
@@ -177,6 +178,10 @@
     .benefits-section__description {
       margin-bottom: 48px;
       font-size: 16px;
+    }
+
+    .benefits-section__carousel {
+      margin-bottom: 64px;
     }
   }
 }
