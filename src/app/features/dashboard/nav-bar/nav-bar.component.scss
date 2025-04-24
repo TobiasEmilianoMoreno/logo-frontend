@@ -1,0 +1,128 @@
+.header {
+  z-index: 200;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.45rem 2rem 0.45rem 1.27rem;
+  border-bottom: 1px solid #e0e0e0;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  position: fixed;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+
+    &-menu-container {
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+      height: 100%;
+    }
+  }
+
+  &__logo img {
+    height: auto;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &-icon img {
+      width: 1.7rem;
+    }
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background-color: #f0f0f0;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    &-input {
+      border: none;
+      outline: none;
+    }
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+
+    &-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.5rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+
+      img {
+        width: 1.5rem;
+        margin: 0.5rem;
+      }
+    }
+
+    &-user {
+      width: 2.1rem;
+      border-radius: 50%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 0.5rem 1rem;
+
+    &__search {
+      display: none;
+    }
+
+    &__right {
+      gap: 0.8rem;
+
+      &-icon img {
+        width: 1.3rem;
+        margin: 0.3rem;
+      }
+
+      &-user {
+        width: 1.8rem;
+      }
+    }
+
+    &__left-menu-container {
+      gap: 0.8rem;
+    }
+
+    &__menu-icon img {
+      width: 1.4rem;
+    }
+
+    &__logo img {
+      max-width: 6rem;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+<header class="header">
+  <div class="header__left">
+    <div class="header__left-menu-container">
+      <div class="header__logo">
+        <img src="assets/dashboard/logo-dark.png" alt="logo" />
+      </div>
+      <div class="header__menu">
+        <div class="header__menu-icon" (click)="toggleSidebar()">
+          <img src="assets/dashboard/bx-menu.svg" alt="menu" />
+        </div>
+      </div>
+      <div class="header__search">
+        <div class="header__search-icon">
+          <img src="assets/dashboard/magnify.svg" alt="search" />
+        </div>
+        <input type="text" placeholder="Search" class="header__search-input" />
+      </div>
+    </div>
+  </div>
+  <div class="header__right">
+    <a class="header__right-icon">
+      <img src="assets/dashboard/notifications.svg" alt="notifications" />
+    </a>
+    <a class="header__right-icon">
+      <img src="assets/dashboard/usa.png" alt="usa" />
+    </a>
+    <a class="header__right-icon">
+      <img
+        src="assets/dashboard/user.jpg"
+        alt="user"
+        class="header__right-user"
+      />
+    </a>
+  </div>
+</header>
+
+<app-side-bar></app-side-bar>
