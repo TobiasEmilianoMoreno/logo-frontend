@@ -1,0 +1,21 @@
+<div class="info-card">
+  <div class="info-card__text">
+    <h6 class="info-card__title">{{ title() }}</h6>
+    @if (typeof value() === 'number') {
+    <p class="info-card__value">
+      {{ value() | currency : "USD" : "symbol" : "1.0" }}
+    </p>
+    } @else {
+    <p class="info-card__value">
+      {{ value() }}
+    </p>
+    }
+  </div>
+  <div class="info-card__action">
+    <img
+      class="info-card__action-icon"
+      [src]="actionIcon()"
+      [alt]="actionAlt()"
+    />
+  </div>
+</div>
