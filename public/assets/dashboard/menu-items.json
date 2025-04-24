@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "Dashboard",
+        "icon": "assets/dashboard/graphic.svg"
+    },
+    {
+        "id": 2,
+        "name": "Explore Properties",
+        "icon": "assets/dashboard/buildings.svg"
+    },
+    {
+        "id": 3,
+        "name": "Favorite Properties",
+        "icon": "assets/dashboard/home-heart.svg"
+    },
+    {
+        "id": 4,
+        "name": "Add Properties",
+        "icon": "assets/dashboard/home-plus.svg"
+    },
+    {
+        "id": 5,
+        "name": "Chat",
+        "icon": "assets/dashboard/chat-outline.svg"
+    },
+    {
+        "id": 6,
+        "name": "User Profile",
+        "icon": "assets/dashboard/account-edit.svg"
+    },
+    {
+        "id": 7,
+        "name": "Blog",
+        "icon": "assets/dashboard/post-outline.svg"
+    },
+    {
+        "id": 8,
+        "name": "Pages",
+        "icon": "assets/dashboard/file-document-outline.svg"
+    },
+    {
+        "id": 9,
+        "name": "Authentication",
+        "icon": "assets/dashboard/login.svg"
+    },
+    {
+        "id": 10,
+        "name": "Miscellaneous",
+        "icon": "assets/dashboard/layers.svg"
+    }
+]
