@@ -1,0 +1,22 @@
+<div class="sales-data">
+  <div class="sales-data__header">
+    <h3 class="sales-data__title">Sales Data</h3>
+    <select class="sales-data__select" (change)="onPeriodChange($event)">
+      @for (period of ['Monthly', 'Weekly', 'Yearly']; track $index) {
+      <option [value]="period">{{ period }}</option>
+      }
+    </select>
+  </div>
+
+  <ul class="sales-data__list">
+    @for (item of sales; track $index) {
+    <li class="sales-data__item">
+      <div class="sales-data__label">{{ item.label }}</div>
+      <div class="sales-data__bar-container">
+        <div class="sales-data__bar" [style.width.%]="item.value"></div>
+      </div>
+      <div class="sales-data__value">{{ item.value }}%</div>
+    </li>
+    }
+  </ul>
+</div>
