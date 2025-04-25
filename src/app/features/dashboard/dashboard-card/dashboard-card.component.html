@@ -2,13 +2,9 @@
   <div class="info-card__text">
     <h6 class="info-card__title">{{ title() }}</h6>
     @if (typeof value() === 'number') {
-    <p class="info-card__value">
-      {{ value() | currency : "USD" : "symbol" : "1.0" }}
-    </p>
+    {{ displayValue | currency : "USD" : "symbol" : "1.0" }}
     } @else {
-    <p class="info-card__value">
-      {{ value() }}
-    </p>
+    {{ displayValue }}
     }
   </div>
   <div class="info-card__action">
