@@ -1,13 +1,17 @@
-<h5>Hello, Calvin</h5>
-<h6>Welcome back!</h6>
+<div class="panel-container">
+  <h5 class="panel-container__title">Hello, Calvin</h5>
+  <h6 class="panel-container__subtitle">Welcome back!</h6>
 
-<div class="cards-grid">
-  @for (card of cards; track card.title) {
-  <app-dashboard-card
-    [title]="card.title"
-    [value]="card.value"
-    [actionIcon]="card.actionIcon"
-    [actionAlt]="card.actionAlt"
-  ></app-dashboard-card>
-  }
+  <div class="panel-container__cards-grid">
+    @for (card of cards; track card.title) {
+    <app-dashboard-card
+      [title]="card.title"
+      [value]="card.value"
+      [actionIcon]="card.actionIcon"
+      [actionAlt]="card.actionAlt"
+    ></app-dashboard-card>
+    }
+  </div>
+
+  <app-revenue-analytics></app-revenue-analytics>
 </div>
