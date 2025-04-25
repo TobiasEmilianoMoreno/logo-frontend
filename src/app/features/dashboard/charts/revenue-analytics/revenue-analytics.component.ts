@@ -100,15 +100,20 @@ export class RevenueAnalyticsComponent {
     scales: {
       x: {
         type: 'category',
-        ticks: { color: '#6B7280' },
+        ticks: { color: '#000000' },
         grid: { display: false },
       },
-      y: { grid: { color: '#f0f0f0' } },
+      y: {ticks:{color: '#000000'}, grid: { color: '#f0f0f0' } },
     },
     plugins: {
       legend: {
         position: 'bottom',
-        labels: { boxWidth: 12, padding: 16, color: '#6B7280' },
+        labels: {
+          boxWidth: 12,
+          padding: 16,
+          color: '#000000',
+          font: { weight: 'bold' },
+        },
       },
       tooltip: {
         enabled: true,
@@ -122,9 +127,7 @@ export class RevenueAnalyticsComponent {
         font: {
           size: 18,
         },
-        color: '#374151',
         padding: {
-          top: 10,
           bottom: 20,
         },
       },

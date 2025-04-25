@@ -3,13 +3,6 @@
   flex-direction: column;
   gap: 16px;
 
-  &__cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 16px;
-    padding-left: 10px;
-  }
-
   &__title {
     margin: 0;
   }
@@ -18,4 +11,25 @@
     color: var(--color-text-secondary);
   }
 
+  &__cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
+    padding-left: 10px;
+  }
+
+  &__chart-revenue-sales-data {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 0 10px;
+
+    > app-revenue-analytics,
+    > app-sales-percentage-stats {
+      flex: 1 1 400px; 
+      min-width: 300px;
+      border-radius: 12px;
+      padding: 8px;
+    }
+  }
 }
