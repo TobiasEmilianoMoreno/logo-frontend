@@ -2,11 +2,13 @@
   background: #fff;
   border-radius: 8px;
   padding: 24px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 
   &__header {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 16px;
   }
 
   &__title {
@@ -19,6 +21,9 @@
     border: 1px solid #d1d5db;
     border-radius: 4px;
     cursor: pointer;
+    &:focus{
+      outline: none;
+    }
   }
 
   &__body {

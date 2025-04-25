@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
 import { DashboardCardComponent } from '../dashboard-card/dashboard-card.component';
-import { RevenueAnalyticsComponent } from "../charts/revenue-analytics/revenue-analytics.component";
+import { RevenueAnalyticsComponent } from '../charts/revenue-analytics/revenue-analytics.component';
+import { SalesPercentageStatsComponent } from '../sales-percentage-stats/sales-percentage-stats.component';
 
 @Component({
   selector: 'app-panel',
-  imports: [DashboardCardComponent, RevenueAnalyticsComponent],
+  imports: [
+    DashboardCardComponent,
+    RevenueAnalyticsComponent,
+    SalesPercentageStatsComponent,
+  ],
   templateUrl: './panel.component.html',
   styleUrl: './panel.component.scss',
 })
