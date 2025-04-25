@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { DashboardCardComponent } from '../dashboard-card/dashboard-card.component';
+import { RevenueAnalyticsComponent } from "../charts/revenue-analytics/revenue-analytics.component";
 
 @Component({
   selector: 'app-panel',
-  imports: [DashboardCardComponent],
+  imports: [DashboardCardComponent, RevenueAnalyticsComponent],
   templateUrl: './panel.component.html',
   styleUrl: './panel.component.scss',
 })

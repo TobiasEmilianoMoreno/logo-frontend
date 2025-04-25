@@ -1,14 +1,21 @@
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+.panel-container {
+  display: flex;
+  flex-direction: column;
   gap: 16px;
-  padding-left: 10px;
-}
 
-h5 {
-  margin: 0;
-}
+  &__cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
+    padding-left: 10px;
+  }
 
-h6 {
-  color: var(--color-text-secondary);
+  &__title {
+    margin: 0;
+  }
+
+  &__subtitle {
+    color: var(--color-text-secondary);
+  }
+
 }
