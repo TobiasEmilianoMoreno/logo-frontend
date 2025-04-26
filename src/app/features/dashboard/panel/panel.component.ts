@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { DashboardCardComponent } from '../dashboard-card/dashboard-card.component';
 import { RevenueAnalyticsComponent } from '../charts/revenue-analytics/revenue-analytics.component';
 import { SalesPercentageStatsComponent } from '../sales-percentage-stats/sales-percentage-stats.component';
+import { RecentTransactionsComponent } from "../recent-transactions/recent-transactions.component";
+import { TopPropertiesComponent } from "../top-properties/top-properties.component";
 
 @Component({
   selector: 'app-panel',
@@ -9,7 +11,9 @@ import { SalesPercentageStatsComponent } from '../sales-percentage-stats/sales-p
     DashboardCardComponent,
     RevenueAnalyticsComponent,
     SalesPercentageStatsComponent,
-  ],
+    RecentTransactionsComponent,
+    TopPropertiesComponent
+],
   templateUrl: './panel.component.html',
   styleUrl: './panel.component.scss',
 })
