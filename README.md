@@ -47,6 +47,9 @@ Accede a la demo del proyecto: [Inmobiliaria Logo Demo](https://inmobiliaria-log
 
    ```bash
    npm install
+   npm install primeng primeicons chart.js
+   npm install chartjs-plugin-crosshair
+   ng add @angular/material
    ```
 
 3. **Iniciar el servidor de desarrollo**

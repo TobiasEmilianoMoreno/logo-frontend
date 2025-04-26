@@ -1,0 +1,25 @@
+<div class="panel-container">
+  <h5 class="panel-container__title">Hello, Calvin</h5>
+  <h6 class="panel-container__subtitle">Welcome back!</h6>
+
+  <div class="panel-container__cards-grid">
+    @for (card of cards; track card.title) {
+    <app-dashboard-card
+      [title]="card.title"
+      [value]="card.value"
+      [actionIcon]="card.actionIcon"
+      [actionAlt]="card.actionAlt"
+    ></app-dashboard-card>
+    }
+  </div>
+
+  <section class="panel-container__chart-revenue-sales-data">
+    <app-revenue-analytics></app-revenue-analytics>
+    <app-sales-percentage-stats></app-sales-percentage-stats>
+  </section>
+  <div class="panel-container__recent-transactions-top-properties">
+    <div style="width: 350px; height: 350px"></div>
+    <app-recent-transactions></app-recent-transactions>
+    <app-top-properties></app-top-properties>
+  </div>
+</div>
