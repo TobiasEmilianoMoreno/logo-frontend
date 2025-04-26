@@ -1,0 +1,34 @@
+<div class="top-properties">
+  <div class="top-properties__header">
+    <h3 class="top-properties__title">Top Properties</h3>
+    <a href="#" class="top-properties__action">
+      See More
+      <span class="top-properties__icon">→</span>
+    </a>
+  </div>
+
+  <ul class="top-properties__list">
+    @for (property of properties; track $index) {
+    <li class="top-properties__item">
+      <img
+        [src]="property.imageUrl"
+        alt="{{ property.title }}"
+        class="top-properties__avatar"
+      />
+      <div class="top-properties__info">
+        <span class="top-properties__name">{{ property.title }}</span>
+        <span class="top-properties__location">{{ property.location }}</span>
+      </div>
+      @if (property.change > 0) {
+      <span class="top-properties__change--up">
+        {{ "↑" + property.change + "%" }}
+      </span>
+      } @else {
+      <span class="top-properties__change--down">
+        {{ "↓" + property.change + "%" }}
+      </span>
+      }
+    </li>
+    }
+  </ul>
+</div>
