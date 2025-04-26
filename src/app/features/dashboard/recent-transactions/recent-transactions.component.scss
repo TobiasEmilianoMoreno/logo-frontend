@@ -1,0 +1,54 @@
+.recent-transactions {
+  background-color: #fff;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius-md);
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+
+    .btn-link {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      color: var(--color-text-secondary);
+      text-decoration: none;
+      transition: color 0.3s;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 1px;
+        background-color: #10b95a;
+        transition: width 0.3s ease;
+      }
+
+      &:hover {
+        color: #10b95a;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+
+      &__icon {
+        margin-left: 4px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-black);
+  }
+}

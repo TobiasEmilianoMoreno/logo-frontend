@@ -1,0 +1,20 @@
+<div class="recent-transactions">
+  <div class="recent-transactions__header">
+    <h4>Recent Transactions</h4>
+    <a href="#" class="btn-link">
+      View orders
+      <span class="btn-link__icon">→</span>
+    </a>
+  </div>
+  <app-table
+    [columns]="[
+      { key: 'imageUrl', label: '' },
+      { key: 'date', label: 'Date' },
+      { key: 'name', label: 'Name' },
+      { key: 'price', label: 'Price' },
+      { key: 'type', label: 'Type' },
+      { key: 'status', label: 'Status' }
+    ]"
+    [data]="transactions"
+  ></app-table>
+</div>
