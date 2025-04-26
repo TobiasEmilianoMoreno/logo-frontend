@@ -1,5 +1,7 @@
 <app-nav-bar></app-nav-bar>
 
-<div class="layout__content" [class.layout__content--shifted]="isOpen()">
-  <router-outlet></router-outlet>
-</div>
+  <div class="layout__content" [class.layout__content--shifted]="isOpen()">
+    <router-outlet></router-outlet>
+  </div>
+
+  <app-footer></app-footer>
