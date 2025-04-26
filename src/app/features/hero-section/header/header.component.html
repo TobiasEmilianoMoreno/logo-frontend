@@ -21,6 +21,10 @@
       <a class="header__nav-link" (click)="navigateTo('properties', $event)"
         >Propiedades</a
       >
+      @if (isLogedIn()) {
+      <a class="header__nav-link" routerLink="/dashboard/panel"
+        >Dashboard</a>
+      }
     </nav>
 
     @if (isLogedIn()) {
