@@ -4,6 +4,7 @@ import { RevenueAnalyticsComponent } from '../charts/revenue-analytics/revenue-a
 import { SalesPercentageStatsComponent } from '../sales-percentage-stats/sales-percentage-stats.component';
 import { RecentTransactionsComponent } from "../recent-transactions/recent-transactions.component";
 import { TopPropertiesComponent } from "../top-properties/top-properties.component";
+import { AreaMapComponent } from "../area-map/area-map.component";
 
 @Component({
   selector: 'app-panel',
@@ -12,7 +13,8 @@ import { TopPropertiesComponent } from "../top-properties/top-properties.compone
     RevenueAnalyticsComponent,
     SalesPercentageStatsComponent,
     RecentTransactionsComponent,
-    TopPropertiesComponent
+    TopPropertiesComponent,
+    AreaMapComponent
 ],
   templateUrl: './panel.component.html',
   styleUrl: './panel.component.scss',
