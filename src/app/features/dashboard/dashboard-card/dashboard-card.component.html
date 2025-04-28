@@ -1,11 +1,13 @@
 <div class="info-card">
   <div class="info-card__text">
-    <h6 class="info-card__title">{{ title() }}</h6>
-    @if (typeof value() === 'number') {
-    {{ displayValue | currency : "USD" : "symbol" : "1.0" }}
-    } @else {
-    {{ displayValue }}
-    }
+    <h5 class="info-card__title">{{ title() }}</h5>
+    <span class="info-card__value">
+      @if (typeof value() === 'number') {
+      {{ displayValue | currency : "USD" : "symbol" : "1.0" }}
+      } @else {
+      {{ displayValue }}
+      }
+    </span>
   </div>
   <div class="info-card__action">
     <img

@@ -1,5 +1,6 @@
 .sales-data {
   padding: 16px;
+  padding-bottom: 0;
   border-radius: 8px;
   background-color: #fff;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
@@ -9,9 +10,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 16px;
-    flex-wrap: wrap;
     border-bottom: 1px solid #e6e6e6;
+    padding: 24px;
   }
 
   &__title {
@@ -22,11 +22,9 @@
   }
 
   &__select {
-    padding: 5px 10px;
-    border-radius: 6px;
+    padding: 8px 40px 8px 12px;
+    border-radius: 4px;
     border: 1px solid #ccc;
-    background: #fff;
-    margin-bottom: 7px;
     &:focus {
       outline: none;
     }
@@ -34,20 +32,23 @@
 
   &__list {
     list-style: none;
-    padding: 0;
-    margin: 0;
   }
 
   &__item {
     display: flex;
-    align-items: center;
-    margin-bottom: 25px;
-    flex-wrap: wrap;
+    flex-direction: column;
     color: #90a1b9;
+    padding-top: 16px;
+  }
+
+  &__item-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
   }
 
   &__label {
-    flex: 0 0 140px;
     font-size: 15px;
   }
 
@@ -68,25 +69,20 @@
   }
 
   &__value {
-    flex: 0 0 40px;
     font-size: 14px;
     text-align: right;
   }
 
   @media (max-width: 480px) {
-    &__item {
+    &__item-top {
       flex-direction: column;
-      align-items: stretch;
+      align-items: flex-start;
     }
     &__label,
     &__value {
-      flex: none;
       width: 100%;
       text-align: left;
       margin-bottom: 4px;
-    }
-    &__value {
-      margin-top: 4px;
     }
     &__bar-container {
       width: 100%;
