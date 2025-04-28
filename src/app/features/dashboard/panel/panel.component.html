@@ -18,7 +18,14 @@
     <app-sales-percentage-stats></app-sales-percentage-stats>
   </section>
   <div class="panel-container__recent-transactions-top-properties">
-    <div style="width: 350px; height: 350px"></div>
+    <div style="background-color: black" class="asd">
+      <app-dashboard-card
+        [title]="cards[0].title"
+        [value]="cards[0].value"
+        [actionIcon]="cards[0].actionIcon"
+        [actionAlt]="cards[0].actionAlt"
+      ></app-dashboard-card>
+    </div>
     <app-recent-transactions></app-recent-transactions>
     <app-top-properties></app-top-properties>
   </div>

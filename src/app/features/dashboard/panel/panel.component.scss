@@ -25,7 +25,6 @@
     display: grid;
     gap: 16px;
     width: 100%;
-    overflow: hidden;
 
     & > * {
       min-width: 0;
@@ -37,18 +36,69 @@
   }
 
   &__chart-revenue-sales-data {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    grid-template-columns: repeat(5, 1fr);
 
-  &__recent-transactions-top-properties {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  @media (max-width: 1024px) {
-    &__chart-revenue-sales-data,
-    &__recent-transactions-top-properties {
-      grid-template-columns: 1fr;
+    & app-revenue-analytics {
+      grid-column: 1 / span 3;
+    }
+    & app-sales-percentage-stats {
+      grid-column: 4 / span 5;
     }
   }
 
+  &__recent-transactions-top-properties {
+    grid-template-columns: repeat(12, 1fr);
+
+    & .asd {
+      grid-column: 1 / span 3;
+    }
+    & app-recent-transactions {
+      grid-column: 4 / span 6;
+    }
+    & app-top-properties {
+      grid-column: 10 / span 3;
+    }
+  }
+
+  @media (max-width: 1140px) {
+    &__recent-transactions-top-properties {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+
+      & .asd {
+        grid-column: 1 / span 1;
+        grid-row: 1;
+      }
+      & app-top-properties {
+        grid-column: 2 / span 1;
+        grid-row: 1;
+      }
+      & app-recent-transactions {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    &__chart-revenue-sales-data {
+      grid-template-columns: 1fr;
+      
+      & app-revenue-analytics,
+      & app-sales-percentage-stats {
+        grid-column: auto;
+      }
+    }
+
+    &__recent-transactions-top-properties {
+      grid-template-columns: 1fr;
+
+      & .asd,
+      & app-top-properties,
+      & app-recent-transactions {
+        grid-column: auto;
+        grid-row: auto;
+      }
+    }
+  }
 }
