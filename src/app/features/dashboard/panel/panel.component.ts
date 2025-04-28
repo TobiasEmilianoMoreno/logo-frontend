@@ -30,13 +30,13 @@ export class PanelComponent {
     {
       title: 'Total Visitor',
       value: '2456',
-      actionIcon: 'assets/dashboard/account-group-outline.svg',
+      actionIcon: 'assets/dashboard/account-group-outline-black.svg',
       actionAlt: 'users',
     },
     {
       title: 'Total Properties',
       value: '358',
-      actionIcon: 'assets/dashboard/home-city-outline.svg',
+      actionIcon: 'assets/dashboard/home-city-outline-black.svg',
       actionAlt: 'home',
     },
     {
