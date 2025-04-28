@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
-import { HeroSectionComponent } from './features/hero-section/hero-section.component';
-import { PanelComponent } from './features/dashboard/panel/panel.component';
+import { HeroSectionComponent } from './features/home/hero-section/hero-section.component';
 import { LayoutComponent } from './features/dashboard/layout/layout.component';
 import { authGuard } from './core/guards/auth.guard';
 export const routes: Routes = [
