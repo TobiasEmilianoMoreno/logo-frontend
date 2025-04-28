@@ -66,7 +66,6 @@
             opacity: 0.8;
           }
         }
-
       }
     }
   }
@@ -105,12 +104,45 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .footer {
+    height: auto;
+    padding: 48px 0 24px;
+
+    &__container {
+      padding: 0 16px;
+    }
+
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+      margin-bottom: 48px;
+    }
+
+    &__section {
+      h3 {
+        font-size: 18px;
+      }
+      ul li {
+        margin-bottom: 8px;
+      }
+    }
+
+    &__social {
+      justify-content: start;
+      gap: 16px;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .footer {
     padding: 24px 0 16px;
 
     &__content {
       gap: 16px;
+      grid-template-columns: 1fr;
     }
 
     &__section {
