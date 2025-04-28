@@ -1,32 +1,33 @@
 .revenue-analytics {
   background: #fff;
   border-radius: 8px;
-  padding: 24px;
-  margin-right: 5px;
+  padding: 16px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 
   &__header {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #e5e7eb;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
   }
 
   &__title {
-    font-size: 18px;
-    color: #111827;
+    font-size: 20px;
+    font-weight: 600;
+    flex: 1;
+    min-width: 120px;
   }
 
   &__select {
-    padding: 6px 12px;
-    border: 1px solid #d1d5db;
-    border-radius: 4px;
-    cursor: pointer;
-    &:focus{
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin-bottom: 7px;
+    &:focus {
       outline: none;
     }
   }
-
   &__body {
     display: flex;
     flex-direction: column;
