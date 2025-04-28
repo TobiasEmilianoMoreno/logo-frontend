@@ -4,7 +4,7 @@ import { Injectable, signal } from '@angular/core';
   providedIn: 'root',
 })
 export class SideBarService {
-  private isOpenSignal = signal(true);
+  private isOpenSignal = signal(false);
   isOpen = this.isOpenSignal.asReadonly();
 
   toggle() {
