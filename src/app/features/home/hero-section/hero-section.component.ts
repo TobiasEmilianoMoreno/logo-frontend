@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { HeaderComponent } from './header/header.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
-import { BenefitsSectionComponent } from '../benefits-section/benefits-section.component';
 import { FooterComponent } from '../footer/footer.component';
+import { BenefitsSectionComponent } from '../benefits-section/benefits-section.component';
+import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-hero-section',

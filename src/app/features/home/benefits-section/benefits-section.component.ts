@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { CarouselComponent } from '../../shared/components/carousel/carousel.component';
+import { CarouselComponent } from '../../../shared/components/carousel/carousel.component';
 
 @Component({
   selector: 'app-benefits-section',

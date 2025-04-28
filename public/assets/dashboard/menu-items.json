@@ -2,51 +2,67 @@
     {
         "id": 1,
         "name": "Dashboard",
-        "icon": "assets/dashboard/graphic.svg"
+        "icon": "assets/dashboard/graphic.svg",
+        "path": "/dashboard/panel"
     },
     {
         "id": 2,
         "name": "Explore Properties",
-        "icon": "assets/dashboard/buildings.svg"
+        "icon": "assets/dashboard/buildings.svg",
+        "path": "/dashboard/panel"
     },
     {
         "id": 3,
         "name": "Favorite Properties",
-        "icon": "assets/dashboard/home-heart.svg"
+        "icon": "assets/dashboard/home-heart.svg",
+        "path": "/dashboard/panel"
     },
     {
         "id": 4,
         "name": "Add Properties",
-        "icon": "assets/dashboard/home-plus.svg"
+        "icon": "assets/dashboard/home-plus.svg",
+        "path": "/dashboard/panel"
     },
     {
         "id": 5,
         "name": "Chat",
-        "icon": "assets/dashboard/chat-outline.svg"
+        "icon": "assets/dashboard/chat-outline.svg",
+        "path": "/dashboard/panel"
     },
     {
         "id": 6,
         "name": "User Profile",
-        "icon": "assets/dashboard/account-edit.svg"
+        "icon": "assets/dashboard/account-edit.svg",
+        "path": "/dashboard/panel"
     },
     {
         "id": 7,
         "name": "Blog",
-        "icon": "assets/dashboard/post-outline.svg"
+        "icon": "assets/dashboard/post-outline.svg",
+        "path": "/dashboard/panel"
     },
     {
         "id": 8,
         "name": "Pages",
-        "icon": "assets/dashboard/file-document-outline.svg"
+        "icon": "assets/dashboard/file-document-outline.svg",
+        "path": "/dashboard/panel"
     },
     {
         "id": 9,
         "name": "Authentication",
-        "icon": "assets/dashboard/login.svg"
+        "icon": "assets/dashboard/login.svg",
+        "path": "/dashboard/panel"
     },
     {
         "id": 10,
         "name": "Miscellaneous",
-        "icon": "assets/dashboard/layers.svg"
+        "icon": "assets/dashboard/layers.svg",
+        "path": "/dashboard/panel"
+    },
+    {
+        "id": 11,
+        "name": "Home",
+        "icon": "assets/dashboard/home-account.svg",
+        "path": "/home"
     }
 ]

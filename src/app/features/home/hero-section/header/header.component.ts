@@ -1,8 +1,8 @@
 import { Component, signal, effect, PLATFORM_ID, inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { ViewportScroller } from '@angular/common';
-import { AuthMockComponent } from '../../auth-mock/auth-mock.component';
 import { RouterLink } from '@angular/router';
+import { AuthMockComponent } from '../../auth-mock/auth-mock.component';
 
 @Component({
   selector: 'app-header',

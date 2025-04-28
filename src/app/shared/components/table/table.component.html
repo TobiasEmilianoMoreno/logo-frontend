@@ -1,46 +1,55 @@
-<table class="generic-table">
-  <thead class="generic-table__head">
-    <tr class="generic-table__row">
-      @for (col of columns(); track $index) {
-      <th class="generic-table__cell generic-table__cell--head">
-        <div class="generic-table__cell generic-table__cell--head">
-          {{ col.label }}
-        </div>
-      </th>
-      }
-    </tr>
-  </thead>
+<div class="table-wrapper">
+  <table class="generic-table">
+    <thead class="generic-table__head">
+      <tr class="generic-table__row">
+        @for (col of columns(); track $index) {
+          <th class="generic-table__cell generic-table__cell--head">
+            {{ col.label }}
+          </th>
+        }
+      </tr>
+    </thead>
 
-  <tbody class="generic-table__body">
-    @for (row of data(); track $index) {
-    <tr class="generic-table__row">
-      @for (col of columns(); track $index) { @if(isImageUrl(row[col.key])) {
-      <td class="generic-table__cell">
-        <img
-          [src]="row[col.key]"
-          [alt]="col.label"
-          class="generic-table__img"
-        />
-      </td>
-      }@else { @switch (col.key) { @case ('price') {
-      <td class="generic-table__cell">
-        {{ row[col.key] | currency : "USD" : "symbol" : "1.0" }}
-      </td>
-      } @case ('status') { @if (row[col.key] === 'Paid') {
-      <td class="generic-table__cell--span--paid">
-        <span>{{ row[col.key] }}</span>
-      </td>
-      }@else if(row[col.key] === 'Unpaid') {
-      <td class="generic-table__cell--span--unpaid">
-        <span>{{ row[col.key] }}</span>
-      </td>
+    <tbody class="generic-table__body">
+      @for (row of data(); track $index) {
+        <tr class="generic-table__row">
+          @for (col of columns(); track $index) {
+            @if(isImageUrl(row[col.key])) {
+              <td class="generic-table__cell">
+                <img
+                  [src]="row[col.key]"
+                  [alt]="col.label"
+                  class="generic-table__img"
+                />
+              </td>
+            } @else {
+              @switch (col.key) {
+                @case ('price') {
+                  <td class="generic-table__cell">
+                    {{ row[col.key] | currency : "USD" : "symbol" : "1.0" }}
+                  </td>
+                }
+                @case ('status') {
+                  @if (row[col.key] === 'Paid') {
+                    <td class="generic-table__cell generic-table__cell--span-paid">
+                      <span>{{ row[col.key] }}</span>
+                    </td>
+                  } @else if (row[col.key] === 'Unpaid') {
+                    <td class="generic-table__cell generic-table__cell--span-unpaid">
+                      <span>{{ row[col.key] }}</span>
+                    </td>
+                  }
+                }
+                @default {
+                  <td class="generic-table__cell">
+                    {{ row[col.key] }}
+                  </td>
+                }
+              }
+            }
+          }
+        </tr>
       }
-    } @default {
-      <td class="generic-table__cell">
-        {{ row[col.key] }}
-      </td>
-      } } } }
-    </tr>
-    }
-  </tbody>
-</table>
+    </tbody>
+  </table>
+</div>

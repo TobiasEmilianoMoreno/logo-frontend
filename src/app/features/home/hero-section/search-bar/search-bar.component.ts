@@ -1,5 +1,5 @@
 import { Component, output } from '@angular/core';
-import { SelectComponent } from '../../../shared/components/select/select.component';
+import { SelectComponent } from '../../../../shared/components/select/select.component';
 
 @Component({
   selector: 'app-search-bar',

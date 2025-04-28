@@ -4,11 +4,12 @@
   align-items: center;
   background-color: #fff;
   border-radius: 8px;
-  padding: 10px;
+  padding: 20px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 
   &__title {
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 17px;
     color: #90a1b9;
     margin: 0 0 4px;
   }
@@ -20,7 +21,7 @@
   }
 
   &__action {
-    background-color: oklch(0.984 0.003 247.858);
+    background-color: #f8fafc;
     border-radius: 6px;
     padding: 8px;
     display: flex;
