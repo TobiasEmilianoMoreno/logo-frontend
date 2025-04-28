@@ -3,7 +3,7 @@
     <ul>
       @for (item of menuItems; track item.id) {
       <li>
-        <a href="/dashboard/panel" class="sidebar__link"  (click)="onMenuClick()">
+        <a routerLink= '{{ item.path }}' class="sidebar__link"  (click)="onMenuClick()">
           <img [src]="item.icon" [alt]="item.name" class="sidebar__img" />
           <span class="sidebar__text">{{ item.name }}</span>
         </a>
