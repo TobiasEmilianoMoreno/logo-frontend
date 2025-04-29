@@ -72,18 +72,26 @@ public/
 │   └──images/
 src/
 ├── app/
-│   ├── components/
-│   │   ├── hero/
-│   │   ├── search-bar/
-│   │   ├── property-cards/
-│   │   ├── carousel/
-│   │   ├── benefits/
-│   │   ├── investment/
-│   │   ├── footer/
-│   │   └── auth/
-│   ├── services/
-│   ├── models/
+│   ├── core/
+│   │   └── guards/
+│   ├── features/
+│   │   ├── dashboard/
+│   │   │   ├── area-map/
+│   │   │   ├── charts/
+│   │   │   ├── dashboard-card/
+│   │   │   ├── layout/
+│   │   │   ├── panel/
+│   │   │   ├── recent-transactions/
+│   │   │   ├── sales-percentage-stats/
+│   │   │   └── top-properties/
+│   │   ├── home/
+│   │   │   ├── auth-mock/
+│   │   │   ├── benefits-section/
+│   │   │   ├── footer/
+│   │   │   └── hero-section/
 │   └── shared/
+│   │   ├── components/
+│   │   └── services/
 
 ```
 
