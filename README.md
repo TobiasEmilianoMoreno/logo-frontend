@@ -61,6 +61,7 @@ Accede a la demo del proyecto: [Inmobiliaria Logo Demo](https://inmobiliaria-log
    npm install
    npm install primeng primeicons chart.js
    npm install chartjs-plugin-crosshair
+   npm i --save-dev @types/chartjs-plugin-crosshair
    ng add @angular/material
    npm install ngx-echarts echarts
    ```
