@@ -23,6 +23,7 @@ Inmobiliaria Logo es una plataforma digital moderna y elegante diseñada para tr
 - **Despliegue**: Netlify Pages
 
 ## 🚀 Demo en Vivo
+⚠️ **PARA INGRESAR AL DASHBOARD DEBE ESTAR LOGEADO Y SE LE HABILITARÁ EL REDIRECCIONAMIENTO EN LA BARRA DE NAVEGACIÓN** ⚠️
 
 Accede a la demo del proyecto: [Inmobiliaria Logo Demo](https://inmobiliaria-logo-tobias-moreno-techf.netlify.app/)
 
