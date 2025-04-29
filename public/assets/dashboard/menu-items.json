@@ -2,67 +2,67 @@
     {
         "id": 1,
         "name": "Dashboard",
-        "icon": "assets/dashboard/graphic.svg",
+        "icon": "mdi mdi-chart-bell-curve-cumulative",
         "path": "/dashboard/panel"
     },
     {
         "id": 2,
         "name": "Explore Properties",
-        "icon": "assets/dashboard/buildings.svg",
-        "path": "/dashboard/panel"
+        "icon": "mdi mdi-home-city",
+        "path": "/dashboard/properties"
     },
     {
         "id": 3,
         "name": "Favorite Properties",
-        "icon": "assets/dashboard/home-heart.svg",
-        "path": "/dashboard/panel"
+        "icon": "mdi mdi-home-heart",
+        "path": "/dashboard/favorite-properties"
     },
     {
         "id": 4,
         "name": "Add Properties",
-        "icon": "assets/dashboard/home-plus.svg",
-        "path": "/dashboard/panel"
+        "icon": "mdi mdi-home-plus",
+        "path": "/dashboard/add-property"
     },
     {
         "id": 5,
         "name": "Chat",
-        "icon": "assets/dashboard/chat-outline.svg",
-        "path": "/dashboard/panel"
+        "icon": "mdi mdi-chat-outline",
+        "path": "/dashboard/chat"
     },
     {
         "id": 6,
         "name": "User Profile",
-        "icon": "assets/dashboard/account-edit.svg",
-        "path": "/dashboard/panel"
+        "icon": "mdi mdi-account-edit",
+        "path": "/dashboard/edit-profile"
     },
     {
         "id": 7,
         "name": "Blog",
-        "icon": "assets/dashboard/post-outline.svg",
-        "path": "/dashboard/panel"
+        "icon": "mdi mdi-post-outline",
+        "path": "/dashboard/blog"
     },
     {
         "id": 8,
         "name": "Pages",
-        "icon": "assets/dashboard/file-document-outline.svg",
-        "path": "/dashboard/panel"
+        "icon": "mdi mdi-file-document-outline",
+        "path": "/dashboard/pages"
     },
     {
         "id": 9,
         "name": "Authentication",
-        "icon": "assets/dashboard/login.svg",
-        "path": "/dashboard/panel"
+        "icon": "mdi mdi-login ",
+        "path": "/home"
     },
     {
         "id": 10,
         "name": "Miscellaneous",
-        "icon": "assets/dashboard/layers.svg",
-        "path": "/dashboard/panel"
+        "icon": "mdi mdi-layers",
+        "path": "/dashboard/miscellaneous"
     },
     {
         "id": 11,
         "name": "Home",
-        "icon": "assets/dashboard/home-account.svg",
+        "icon": "mdi mdi-home-account",
         "path": "/home"
     }
 ]

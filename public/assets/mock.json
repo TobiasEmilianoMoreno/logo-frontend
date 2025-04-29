@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "assets/images/carrusel-dept.jpeg",
+    "image": "assets/images/carrusel2-dept.jpeg",
     "name": "Edificio Central",
     "type": { "id": 2, "name": "Edificio" },
     "price": 1200,
@@ -15,7 +15,7 @@
   },
   {
     "id": 2,
-    "image": "assets/images/carrusel-dept.jpeg",
+    "image": "assets/images/carrusel-dept2.jpeg",
     "name": "Depto Familiar",
     "type": { "id": 1, "name": "Departamento" },
     "price": 850,
@@ -29,7 +29,7 @@
   },
   {
     "id": 3,
-    "image": "assets/images/carrusel-dept.jpeg",
+    "image": "assets/images/carrusel2-dept2.jpeg",
     "name": "Edificio Torre Norte",
     "type": { "id": 2, "name": "Edificio" },
     "price": 1500,
@@ -57,7 +57,7 @@
   },
   {
     "id": 5,
-    "image": "assets/images/carrusel-dept.jpeg",
+    "image": "assets/images/carrusel2-dept3.jpeg",
     "name": "Edificio Sur",
     "type": { "id": 2, "name": "Edificio" },
     "price": 1300,
@@ -71,7 +71,7 @@
   },
   {
     "id": 6,
-    "image": "assets/images/carrusel-dept.jpeg",
+    "image": "assets/images/carrusel2-dept4.jpeg",
     "name": "Depto Moderno",
     "type": { "id": 1, "name": "Departamento" },
     "price": 900,
