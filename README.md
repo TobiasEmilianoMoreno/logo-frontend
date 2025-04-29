@@ -24,7 +24,21 @@ Inmobiliaria Logo es una plataforma digital moderna y elegante diseñada para tr
 
 ## 🚀 Demo en Vivo
 
+<div style="display: flex; flex-direction: column;">
+<span>
+
+⚠️ **PARA INGRESAR AL DASHBOARD DEBE ESTAR LOGEADO Y SE LE HABILITARÁ EL REDIRECCIONAMIENTO EN LA BARRA DE NAVEGACIÓN** ⚠️
+</span>
+<span>
+
+_Contraseña Genérica de prueba_: `123456`
+</span>
+<span>
+
 Accede a la demo del proyecto: [Inmobiliaria Logo Demo](https://inmobiliaria-logo-tobias-moreno-techf.netlify.app/)
+</span>
+
+</div>
 
 ## 📱 Capturas de Pantalla
 
@@ -72,18 +86,26 @@ public/
 │   └──images/
 src/
 ├── app/
-│   ├── components/
-│   │   ├── hero/
-│   │   ├── search-bar/
-│   │   ├── property-cards/
-│   │   ├── carousel/
-│   │   ├── benefits/
-│   │   ├── investment/
-│   │   ├── footer/
-│   │   └── auth/
-│   ├── services/
-│   ├── models/
+│   ├── core/
+│   │   └── guards/
+│   ├── features/
+│   │   ├── dashboard/
+│   │   │   ├── area-map/
+│   │   │   ├── charts/
+│   │   │   ├── dashboard-card/
+│   │   │   ├── layout/
+│   │   │   ├── panel/
+│   │   │   ├── recent-transactions/
+│   │   │   ├── sales-percentage-stats/
+│   │   │   └── top-properties/
+│   │   ├── home/
+│   │   │   ├── auth-mock/
+│   │   │   ├── benefits-section/
+│   │   │   ├── footer/
+│   │   │   └── hero-section/
 │   └── shared/
+│   │   ├── components/
+│   │   └── services/
 
 ```
 
