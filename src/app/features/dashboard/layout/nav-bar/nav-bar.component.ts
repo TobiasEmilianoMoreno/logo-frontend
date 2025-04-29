@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { SideBarComponent } from './side-bar/side-bar.component';
-import { SideBarService } from '../../../shared/services/sider-bar.service';
+import { SideBarService } from '../../../../shared/services/sider-bar.service';
 @Component({
   selector: 'app-nav-bar',
   imports: [SideBarComponent],

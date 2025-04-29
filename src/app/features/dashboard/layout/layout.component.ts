@@ -1,8 +1,8 @@
 import { Component, computed, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SideBarService } from '../../../shared/services/sider-bar.service';
-import { NavBarComponent } from '../nav-bar/nav-bar.component';
-import { FooterComponent } from "../../../features/dashboard/footer/footer.component";
+import { FooterComponent } from './footer/footer.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @Component({
   selector: 'app-layout',

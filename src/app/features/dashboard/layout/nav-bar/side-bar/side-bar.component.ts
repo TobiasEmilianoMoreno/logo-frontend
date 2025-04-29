@@ -1,8 +1,8 @@
 import { Component, computed, inject } from '@angular/core';
 import { MenuItem } from '../menuItem.model';
 import { HttpClient } from '@angular/common/http';
-import { SideBarService } from '../../../../shared/services/sider-bar.service';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { SideBarService } from '../../../../../shared/services/sider-bar.service';
 
 @Component({
   selector: 'app-side-bar',
