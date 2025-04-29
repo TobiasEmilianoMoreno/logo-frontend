@@ -6,17 +6,25 @@
         <a
           routerLink="{{ item.path }}"
           class="sidebar__link"
+          routerLinkActive="sidebar__link--selected"
+          [routerLinkActiveOptions]="{ exact: true }"
           (click)="onMenuClick()"
         >
-          <img
-            src="{{ item.icon }}"
-            alt="{{ item.name }}"
-            class="sidebar__icon"
-          />
-          <span class="sidebar__text">{{ item.name }}</span>
+          <i class="sidebar__link__icon {{ item.icon }}"></i>{{ item.name }}
         </a>
       </li>
       }
     </ul>
   </nav>
+
+  <div class="sidebar__upgrade">
+    <div class="sidebar__upgrade__content">
+      <h4 class="sidebar__upgrade__title">Upgrade to Pro</h4>
+      <p class="sidebar__upgrade__desc">
+        Get one month free and subscribe to pro
+      </p>
+      <button class="sidebar__upgrade__btn">Subscribe</button>
+    </div>
+    <i class="sidebar__upgrade__bg-icon mdi mdi-home-city-outline"></i>
+  </div>
 </div>

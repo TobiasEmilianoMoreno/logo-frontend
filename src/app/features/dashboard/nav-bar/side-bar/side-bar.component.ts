@@ -2,11 +2,11 @@ import { Component, computed, inject } from '@angular/core';
 import { MenuItem } from '../menuItem.model';
 import { HttpClient } from '@angular/common/http';
 import { SideBarService } from '../../../../shared/services/sider-bar.service';
-import { RouterLink } from '@angular/router';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-side-bar',
-  imports: [RouterLink],
+  imports: [RouterLink, RouterLinkActive],
   templateUrl: './side-bar.component.html',
   styleUrl: './side-bar.component.scss',
 })
