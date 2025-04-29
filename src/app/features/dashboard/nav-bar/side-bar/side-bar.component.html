@@ -1,8 +1,8 @@
 <div class="sidebar" [class.sidebar--closed]="!isOpen()">
-  <nav>
-    <ul>
+  <nav class="sidebar__nav">
+    <ul class="sidebar__list">
       @for (item of menuItems; track item.id) {
-      <li>
+      <li class="sidebar__item">
         <a
           routerLink="{{ item.path }}"
           class="sidebar__link"
@@ -10,7 +10,8 @@
           [routerLinkActiveOptions]="{ exact: true }"
           (click)="onMenuClick()"
         >
-          <i class="sidebar__link__icon {{ item.icon }}"></i>{{ item.name }}
+          <i class="sidebar__link__icon {{ item.icon }}"></i>
+          <span class="sidebar__link__text">{{ item.name }}</span>
         </a>
       </li>
       }
